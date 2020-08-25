@@ -27,8 +27,10 @@ public class Servidor {
 			Socket socket = server.accept();
 			System.out.println("Conectado");
 			
-			String path = "D:\\Test\\Enviar\\java.pdf";
+			String path = "D:\\Documents\\Quinto Semestre\\ProRed\\Test\\Enviar\\java.pdf";
 			File file = new File(path);
+			String ab = file.getAbsolutePath();
+			System.out.println(ab);
 			
 			boolean works = file.exists();
 			System.out.println(works);
